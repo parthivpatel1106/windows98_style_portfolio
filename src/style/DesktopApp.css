@@ -1,0 +1,20 @@
+.desktop-app{
+    display: flex;
+    height: 120px;
+    width: 120px;
+    flex-direction: column;
+    align-items: center;
+    background:none;
+    border: none;
+    justify-content: center;
+    cursor:pointer;
+}
+.dt-app-icon{
+    height: 50px;
+}
+.dt-app-name
+{
+    font-size: 10px;
+    color: white;
+    font-family: "Pixel Sans Serif Regular";
+}

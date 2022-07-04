@@ -1,38 +1,453 @@
-.App {
+@font-face {
+  font-family:"Pixel Sans Serif Regular";
+  src:url("./fonts/Pixel_Sans_Serif.woff") format("woff");font-weight:normal;
+  font-style:normal;
+}
+
+/* .app{
+  position:absolute;
+} */
+
+body{
+  /* background-color: #219c9c; */
+  font-family: "Pixel Sans Serif Regular";
+}
+.taskbar{
+  background-color: #c0c0c0;
+  position:fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 3px solid #f5f5f5;
+  display: flex;
+}
+.contents
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* column-gap: 500px; */
+  width: 100% ;
+}
+.left-content{
+  display: flex;
+}
+/* ---------- */
+
+
+
+/* start button styling */
+.start{
+  padding: 5px;
+}
+.start-btn{
+  font-family: "Pixel Sans Serif Regular";
+  height: 40px;
+  width:100px;
+  display: flex;
+  column-gap: 3px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-top:4px solid #f5f5f5;
+  border-left:4px solid #f5f5f5;
+  border-right:3px solid #242424;
+  border-bottom:3px solid #4d4d4d;
+  cursor: pointer;
+  outline: none;
+}
+.start-btn:active{
+  border-bottom:4px solid #f5f5f5;
+  border-right:4px solid #f5f5f5;
+  border-left:3px solid #242424;
+  border-top:3px solid #4d4d4d;
+}
+
+
+
+.btn-logo{
+  height: 25px;
+  width: 25px;
+}
+/* -------------- */
+
+
+
+/* task bar apps styling */
+.taskbar-apps
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* column-gap: -1px; */
+  column-gap: 10px;
+}
+.explorer-logo
+{
+ height: 50px;
+}
+.mail-logo{
+  height: 50px;
+}
+
+/* --------------- */
+
+
+/* date and time styling */
+
+.date-time-widget{
+  display: flex;
+  width: 130px;
+  margin: 10px;
+  height: 50px;
+}
+.clock-widget{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 3px;
+  border-top: 3px solid #848484;
+  border-left: 3px solid #848484;
+  border-bottom: 3px solid #dedede;
+  border-right: 3px solid #dedede;
+}
+.clock-display{
+  font-size: 12px;
+}
+
+
+.calender-logo
+{
+  height: 25px;
+}
+.cal-btn
+{
+  border: none;
+  background-color: transparent;
+  padding: 0%;
+  cursor: pointer;
+}
+
+
+
+/* date and time properties */
+.date-time-properties{
+  height:400px;
+  width:550px;
+  background-color: #c0c0c0;
+  margin-left: 100px;
+  border-top:3px solid #f7f7f7;
+  border-left:3px solid #f7f7f7;
+  border-right:3px solid #242424;
+  border-bottom:3px solid #242424;
+}
+.dt-title-bar
+{
+  height:25px;
+  background-image: linear-gradient(to right,#0635a0,#0a53b2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.dt-title{
+  margin-top: 0px;
+  font-size: 10px;
+  /* padding-top: 5px;
+  padding-left: 20px; */
+  color:white;
+}
+.dt-close-btn{
+  font-size: 10px;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  background-color: #c0c0c0;
+  border-top:3px solid #f7f7f7;
+  border-left:3px solid #f7f7f7;
+  border-right:3px solid #242424;
+  border-bottom:3px solid #242424;
+  cursor: pointer;
+}
+.dt-close-btn:active{
+  border-bottom:3px solid #f5f5f5;
+  border-right:3px solid #f5f5f5;
+  border-left:3px solid #242424;
+  border-top:3px solid #4d4d4d;
+}
+.dt-container{
+  height:300px;
+  width: 435px;
+  background-color: #c0c0c0;
+  /* border-top: 2px solid #efefef; */
+  /* border-left: 2px solid #efefef;
+  border-right: 2px solid #202020 ;
+  border-bottom: 2px solid  #202020;
+  border-radius: 3px; */
+  margin:6px;
+}
+.dt-tab-list{
+  display: flex;
+  list-style: none;
+  font-size: 10px;
+  font-weight: 100;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+.dt-tab-1
+{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #c0c0c0;
+  cursor: pointer;
+  border-top: 3px solid #efefef;
+  border-left: 3px solid #efefef;
+}
+.dt-tab-2
+{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #c0c0c0;
+  cursor: pointer;
+  border-right: 2px solid #202020 ;
+  border-top: 3px solid #efefef;
+}
+
+/* .dt-tab:not(:last-child)
+{
+  border-right: 2px solid #202020 ;
+} */
+.active-tab-1{
+  border-right: 3px solid #202020 ;
+  border-top: 4px solid #efefef;
+}
+.active-tab-2
+{
+  border-left: 3px solid #efefef;
+  border-right: 3px solid #202020;
+  border-top: 4px solid #efefef;
+  border-top-style: outset;
+  border-top-style: outset;
+  border-left-style: inset;
+}
+.dt-container-content{
+  border-top: 2px solid #efefef;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #202020 ;
+  border-bottom: 2px solid  #202020;
+  /* border-radius: 3px; */
+  height:285px;
+  width: 535px;
+}
+.dt-content-1
+{
+  display:none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+
+}
+.dt-date-content
+{
+  height: 230px;
+  width:250px;
+  border: 2px solid #d6d6d6;
+  border-style: ridge;
+}
+.dt-content-title{
+  font-size: 10px;
+  color: gray;
+}
+.dt-time-content
+{
+  height: 230px;
+  width:250px;
+  border: 2px solid #d6d6d6;
+  border-style: ridge;
+}
+
+.dt-content-2
+{
+  height:280px;
+  width: 535px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-content{
+  display: flex;
+}
+/*
+.dt-calendar-view{
+  margin-top: 10px;
+} */
+.dt-month-name
+{
+  display: block;
+  /* height: 10px; */
+  font-size: 12px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dt-clock-view{
+  display:flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3px;
+}
+.clock-time{
+  background-color: #c0c0c0;
+  border-bottom: 2px solid #efefef;
+  border-right: 2px solid #efefef;
+  border-left: 2px solid #202020 ;
+  border-top: 2px solid  #202020;
+  padding: 5px;
+  font-size: 18px;
+}
+.dt-clock-timezone{
+  font-size: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .ant-popover{
+  z-index: 999 !important;
+  background-color: red;
+} */
+
+.popover
+{
+  position: absolute;
+  /* position: fixed; */
+  right: 3px;
+  bottom: 55px;    /*changes on 1/jul */
+}
+.popover-inner
+{
+  /* background-color: white; */
+  position: relative;
+  /* right: 30px;          */
+  /* changes on 1/jul */
+  /* bottom: 30px;  */
+}
+.dt-widget-position{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* width: 100px; */
+  /* background-color: red; */
+}
+.dt-widget-position .popover-inner{
+  position: relative;
+  right: 3px;
+  bottom: 55px;
+  /* width: 100px; */
+  /* background-color: red; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dt-container-btn{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding:10px;
+  column-gap: 10px;
+}
+.dt-btn{
+  border-top: 2px solid #efefef;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #202020 ;
+  border-bottom: 2px solid  #202020;
+  cursor: pointer;
+  background-color: #c0c0c0;
+  font-family: "Pixel Sans Serif Regular";
+  font-size: 10px;
+}
+.dt-btn:active{
+  border-bottom:2px solid #f5f5f5;
+  border-right:2px solid #f5f5f5;
+  border-left:2px solid #242424;
+  border-top:2px solid #4d4d4d;
+}
+.dt-world-clock
+{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  row-gap: 10px;
+  /* margin-bottom: 20px; */
+}
+.dt-map-frame{
+  height: 200px;
+  border-bottom: 3px solid #efefef;
+  border-right: 3px solid #efefef;
+  border-left: 2px solid #202020 ;
+  border-top: 2px solid  #202020;
+}
+.dt-wc{
+  height: 200px;
+  width: 500px;
+}
+.dt-wc-select{
+  font-family: "Pixel Sans Serif Regular";
+  width: 500px;
+  background-color: #0303a1;
   color: white;
+  padding: 5px;
+  border-bottom: 3px solid #efefef;
+  border-right: 3px solid #efefef;
+  border-left: 2px solid #202020 ;
+  border-top: 2px solid  #202020;
+  font-size: 10px;
+  font-weight: 100;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.menu-popover{
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* .testing{
+  height: 500px;
+  width: 500px;
+  border: 1px  solid red;
+  background-color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.maximize{
+  height: 100vh;
+  width: 100%;
+  border: 1px  solid red;
+  background-color: black;
 }
+.sizebar{
+  display: flex;
+  width: 100%;
+  background-color: red;
+  padding:5px;
+  justify-content: space-between;
+}
+.titlebar{
+  display: flex;
+  justify-content: flex-start;
+}
+.child{
+  width: 100%;
+  height: 100%;
+  font-family: "Pixel Sans Serif Regular";
+}
+.child textarea{
+  font-family: "Pixel Sans Serif Regular";
+} */

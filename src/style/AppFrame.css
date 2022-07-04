@@ -1,0 +1,99 @@
+.normal-view{
+    display: block;
+    height: 400px;
+    width:600px;
+    border-bottom: 2px solid #242424;
+    border-right: 2px solid #242424;
+    border-top: 2px solid #dedede;
+    border-left: 2px solid #dedede;
+    background-color: #c0c0c0;
+    position: relative;
+}
+.maximize-view
+{
+    display: block;
+    width: 100%;
+    height: 93vh;
+    border-bottom: 2px solid #242424;
+    border-right: 2px solid #242424;
+    border-top: 2px solid #dedede;
+    border-left: 2px solid #dedede;
+    background-color: #c0c0c0;
+    position: relative;
+}
+.titlebar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    height: 40px;
+    background-image: linear-gradient(to right, #000080, #1084d0);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tb-name{
+    display: flex;
+    font-size: 1.5vh;
+    align-items: center;
+    column-gap: 5px;
+    color: white;
+}
+.tb-icon{
+    height: 3vh;
+}
+.tb-button{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+.tb-btn-icon{
+    display: block;
+    margin: 0 auto;
+    height: 12px;
+}
+.tb-btn
+{
+    background-color: #c0c0c0;
+    height: 25px;
+    width: 25px;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #202020 ;
+    border-bottom: 2px solid  #202020;
+}
+.tb-btn:active
+{
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;
+}
+.app-taskbar{
+    display: flex;
+    background-color: #c0c0c0;
+    height: 30px;
+    font-size: 10px;
+    column-gap: 10px;
+    align-items: center;
+    padding: 0px 15px;
+}
+.app-task{
+    text-decoration: none;
+    color: black;
+}
+.frame-content{
+    position: relative;
+    width:570px;
+    height:300px;
+    /* border: 1px solid red; */
+    display: block;
+    margin: 0 auto;
+}
+.maximize-view .frame-content{
+    position: relative;
+    width:98%;
+    height:78vh;
+    /* border: 1px solid red; */
+    display: block;
+    margin: 0 auto;
+}

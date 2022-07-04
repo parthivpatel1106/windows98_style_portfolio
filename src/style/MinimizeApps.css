@@ -1,0 +1,13 @@
+.minimize-apps{
+    display: flex; 
+    column-gap: 10px;  
+}
+.minimize-app-btn{
+    background-color: #c0c0c0;
+    border-bottom: 2px solid #242424;
+    border-right: 2px solid #242424;
+    border-top: 2px solid #dedede;
+    border-left: 2px solid #dedede;
+    height: 40px;
+    width: 140px;
+}

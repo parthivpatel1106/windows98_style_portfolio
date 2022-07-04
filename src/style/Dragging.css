@@ -1,0 +1,13 @@
+.drag-component{
+    position: absolute;
+    cursor: move;
+    /* width: 100%; */
+    /* background-color: black; */
+    /* top:100px;
+    left:100px; */
+    border: 1px solid red;
+}
+.dialogbox{
+    height: 200px;
+    width: 200px;
+}
