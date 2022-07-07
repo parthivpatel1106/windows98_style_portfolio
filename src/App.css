@@ -451,3 +451,49 @@ body{
 .child textarea{
   font-family: "Pixel Sans Serif Regular";
 } */
+
+.set-view
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+.set-view .popover-inner{
+    position: absolute;
+    top:4%;
+    height: 100vh;
+    width: 100%;
+}
+.normal-view{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  /* width: 100%;    */
+}
+
+.maximize-view{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.frame-content{
+  position: relative;
+  width:570px;
+  height:300px;
+  /* border: 1px solid red; */
+  display: block;
+  margin: 0 auto;
+}
+.maximize-view .frame-content{
+  position: relative;
+  width:98%;
+  height:78vh;
+  /* border: 1px solid red; */
+  display: block;
+  margin: 0 auto;
+}
+
+

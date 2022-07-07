@@ -81,19 +81,19 @@
     text-decoration: none;
     color: black;
 }
-.frame-content{
+/* .frame-content{
     position: relative;
     width:570px;
     height:300px;
-    /* border: 1px solid red; */
+    /* border: 1px solid red; 
     display: block;
     margin: 0 auto;
-}
-.maximize-view .frame-content{
+} */
+/* .maximize-view .frame-content{
     position: relative;
     width:98%;
     height:78vh;
-    /* border: 1px solid red; */
+    /* border: 1px solid red; 
     display: block;
     margin: 0 auto;
-}
+} */

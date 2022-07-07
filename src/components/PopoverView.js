@@ -6,7 +6,7 @@ function PopoverView(props){
         setCurrState(index)
     }
     // const getActiveDiv=(index,className)=>currState===index?className:""
-    console.log(props.menuclass);
+    // console.log(props.menuclass);
     return(props.trigger)?(
         <div className={`popover ${props.menuclass}`} onClick={()=>toggleState(props.state)}>
             <div className="popover-inner">

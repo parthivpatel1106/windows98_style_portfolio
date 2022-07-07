@@ -1,0 +1,140 @@
+.my-computer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    height: 100%;
+}
+.mc-task-bar{
+    height:40px;
+    width: 100%;
+    border-top: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #202020 ;
+    border-bottom: 1px solid  #202020;
+    padding: 5px 0px;
+}
+.mc-tb-button{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
+.mc-tb-btn{
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+.mc-tb-btn img{
+    height: 30px;
+}
+.mc-tb-btn p{
+    font-family: "Pixel Sans Serif Regular";
+    font-size: 10px;
+}
+.mc-ab-name{
+    font-size: 10px;
+}
+.mc-address-bar{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    border-top: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #202020 ;
+    border-bottom: 1px solid  #202020;
+    padding: 5px;
+}
+.mc-ab-path{
+    font-family: "Pixel Sans Serif Regular";
+    font-size: 8px;
+    outline: none;
+    height: 20px;
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;
+    width: 100%;
+}
+
+.files-view{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;
+    overflow: hidden;
+    flex: 1;
+}
+.fv-left{
+    height: 100%;
+}
+.my-comp-img{
+    height: 100%;
+    width: auto;
+}
+.fv-right{
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.fv-right .desktop-app .dt-app-name{
+    color: black;
+    font-size: 8px;
+}
+.mycomputer{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.mycomputer .maximize-view
+{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.subset-view{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: inherit;
+    width: 100%;
+}
+.subset-view .popover-inner{
+    position: relative;
+    height: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.subset-view .popover-inner .error{
+    position: relative;
+    /* height: inherit; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    /* width: 100%; */
+    width: inherit;
+    height: inherit;
+}
+.subset-view .popover-inner .pdf-viewer{
+    position: relative;
+    /* height: inherit; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    /* width: 100%; */
+    width: inherit;
+    height: inherit;
+}

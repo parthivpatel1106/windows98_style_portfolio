@@ -1,0 +1,37 @@
+
+.terminal-view{
+    position: relative;
+    height:100%;
+    width:99%;
+}
+.terminal .normal-view .app-taskbar .app-task{
+    display: none;
+}
+.terminal .maximize-view .app-taskbar .app-task{
+    display: none;
+}
+.tv-text{
+    height: 100%;
+}
+.tv-textarea{
+    position: relative;
+    width: 99%;
+    height: 100%;
+    resize: none;
+    border-bottom: 3px solid #efefef;
+    border-right: 3px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;
+    outline: none;
+    background-color: black;
+    color: green;
+    font-family: "Pixel Sans Serif Regular";
+    font-size: 12px;
+    caret-color: green;
+}
+.terminal .maximize-view{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}

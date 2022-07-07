@@ -42,11 +42,15 @@ function StartMenu() {
           <MenuItem icon={downloadIcon} itemName={"Downloads"} submenu={true} />
           <MenuItem icon={contactIcon} itemName={"Contact"} submenu={true}>
           <MenuList dropdown={true}>
-          <MenuItem icon={linkdinIcon} itemName={"Linkdin"} submenu={false}/>
-          <a href="https://www.github.com" target={"_blank"}>
+          <a className="sociallinks" href="https://www.linkedin.com/in/parthiv-patel-1106/" target={"_blank"}>
+            <MenuItem icon={linkdinIcon} itemName={"Linkdin"} submenu={false}/>
+          </a>
+          <a className="sociallinks" href="https://github.com/parthivpatel1106" target={"_blank"}>
             <MenuItem icon={githubIcon} itemName={"Github"} submenu={false} />
-            </a>
-            <MenuItem icon={hackerrankIcon} itemName={<a href="https://www.google.com" target={"_blank"}>hackerrank</a>} submenu={false}/>
+          </a>
+          {/* <a href="" target={"_blank"}>
+            <MenuItem icon={hackerrankIcon} itemName={"hackerrank"} submenu={false}/>
+          </a> */}
           </MenuList>
           </MenuItem>
           <MenuItem icon={consoleIcon} itemName={"Console"} submenu={false} />
