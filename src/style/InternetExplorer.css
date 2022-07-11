@@ -1,0 +1,123 @@
+.explorer-frame{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+.exp-tools{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    background-color: #c0c0c0;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 2px solid #efefef;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #202020 ;
+  border-bottom: 2px solid  #202020;
+}
+.exp-tools .mc-tb-btn img{
+    height: 20px;
+    
+}
+.exp-searchbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #202020 ;
+    border-bottom: 2px solid  #202020;
+    width: 100%;
+    justify-content:space-around;
+}
+.exp-searchbar-name{
+    font-size: 8px;
+}
+.exp-search{
+    width: 70%;
+    margin: 0px 10px;
+    outline: none;
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;
+    font-family: "Pixel Sans Serif Regular";
+    font-size: 8px;
+}
+.es-btn{
+    font-family: "Pixel Sans Serif Regular";
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #202020 ;
+    border-bottom: 2px solid  #202020;
+    font-size: 8px;
+    outline: none;
+}
+.es-btn:active
+{
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;   
+}
+.exp-main{
+    position: relative;
+    height: inherit;
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;  
+    width: 100%;
+    background-color: white;
+    display: flex;
+    row-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.google-logo{
+    height: 80px;
+}
+.google-searchbar{
+    width: 50%;
+    height: 20px;
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020;
+    outline: none;
+}
+/* .App .subset-view .popover-inner
+{
+    position: absolute;
+    left:50%;
+    right: 50%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+
+}
+.explorer .maximize-view{
+    position: relative;
+    left:50%;
+    right: 50%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+} */
+.App .subset-view{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+.App .subset-view  .popover-inner{
+    position:relative;
+}
+.explorer{
+    position: relative;
+    height: 93%;
+}
+.explorer .maximize-view{
+    position: relative;
+}

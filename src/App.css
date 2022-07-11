@@ -84,6 +84,13 @@ body{
   /* column-gap: -1px; */
   column-gap: 10px;
 }
+.tba-btn{
+  background:none;
+  outline: none;
+  /* height: 30px;   */
+  border: none;
+  cursor: pointer;
+}
 .explorer-logo
 {
  height: 50px;

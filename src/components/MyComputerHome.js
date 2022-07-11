@@ -1,6 +1,6 @@
 import React from 'react'
-import backBtn from "../images/buttons/backward_btn.png";
 import nextBtn from "../images/buttons/forward_btn.png";
+import backBtn from "../images/buttons/backward_btn.png";
 import folderBtn from "../images/buttons/folder_btn.png";
 import renameBtn from "../images/buttons/rename_btn.png";
 import mycompimg from "../images/mycomputer/my_computer_img.png";

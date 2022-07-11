@@ -16,11 +16,13 @@ import MenuItem from "./MenuItem";
 import sscIcon from "../images/menubar/Academics/certificate_0.png"
 import enggIcon from "../images/menubar/Academics/certificate_seal.png"
 import { MenuList } from "./MenuList";
+import { useState } from "react";
 function StartMenu() {
   const shut=()=>{
     console.log("click")
     window.location="https://www.google.com"
   }
+  
   return (
     <div className="menubar">
       <div className="mb-title-bg"></div>
@@ -30,15 +32,10 @@ function StartMenu() {
         <MenuList dropdown={false}>
           <MenuItem icon={windowsUpdateIcon} itemName={"Windows Update"} submenu={false}/>
           <hr className="mb-border"></hr>
-          <MenuItem icon={academicsIcon} itemName={"Academics"} submenu={true}>
-          <MenuList dropdown={true}>
-            <MenuItem icon={sscIcon} itemName={"SSC"} submenu={false}/>
-            <MenuItem icon={sscIcon} itemName={"HSC"} submenu={false}/>
-            <MenuItem icon={enggIcon} itemName={"Engineering"} submenu={false}/>
-          </MenuList>
-          </MenuItem>
-          <MenuItem icon={projectIcon} itemName={"Projects"} submenu={true}/>
-          <MenuItem icon={videoIcon} itemName={"Videos"} submenu={true} />
+          {/* <MenuItem icon={academicsIcon}  itemName={"Academics"} submenu={false}>
+          </MenuItem> */}
+          {/* <MenuItem icon={projectIcon} itemName={"Projects"} submenu={true}/>
+          <MenuItem icon={videoIcon} itemName={"Videos"} submenu={true} /> */}
           <MenuItem icon={downloadIcon} itemName={"Downloads"} submenu={true} />
           <MenuItem icon={contactIcon} itemName={"Contact"} submenu={true}>
           <MenuList dropdown={true}>

@@ -1,0 +1,198 @@
+.tm-container{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 100%;
+}
+.tm-tabs{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+}
+.tm-tab{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #c0c0c0;
+    cursor: pointer;
+    border-right: 2px solid #202020 ;
+    border-top: 3px solid #efefef;
+    border-left: 3px solid #efefef;
+    
+}
+.tm-tab-1{
+    border-right: 3px solid #202020 ;
+    border-top: 4px solid #efefef;
+}
+.tm-tab-2{
+    border-right: 3px solid #202020 ;
+    border-top: 4px solid #efefef;
+}
+.tm-tab-3{
+    border-right: 3px solid #202020 ;
+    border-top: 4px solid #efefef;
+}
+.tm-container-content{
+    position: relative;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #202020 ;
+    border-bottom: 2px solid  #202020;
+    height: 100%;
+}
+.tm-content-1{
+    display: none;
+}
+.tm-content-2{
+    display: none;
+}
+.tm-content-3
+{
+    display:none;
+}
+.tm-active-tab{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.tm-tab-content{
+    position: relative;
+    height: 85%;
+    width: 100%;
+    border:1px solid red;
+    margin: 20px;
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    border-left: 2px solid #202020 ;
+    border-top: 2px solid  #202020; 
+    background-color: white;
+}
+.at-table{
+    font-size: 12px;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.at-table-row-name
+{
+    background-color: #c0c0c0;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #202020 ;
+    border-bottom: 2px solid  #202020;
+}
+.at-table-data{
+    border: 1px solid grey;
+}
+.row-data{
+    display: flex;
+    column-gap: 5px;
+}
+/* .at-table-row td{
+    height:10px;
+} */
+.row-data:active{
+    background-color: blue;
+    color: white;
+    border: 3px dotted black;
+}
+.chart canvas{
+    position: relative;
+    height: 90%;
+    width: 100%;
+}
+.academics-tab{
+    display: flex;
+    flex-direction: column;
+}
+.chart{
+    position: relative;
+    height: 100%;
+}
+.result-chart{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.result-details{
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    /* margin: 0px 10px; */
+    padding: 0px 5px;
+    /* border: 3px solid green; */
+    display: none;
+    margin-top: 32%;
+}
+/* .performance-tab{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+.extra-result{
+    display: none;
+}
+.maximize-view .frame-content .tm-container .tm-container-content .tm-content-2 .performance-tab .result-details{
+    display: flex;
+}
+.result-details p{
+    border: 1px solid green;
+    padding: 3px;
+}
+.maximize-view .frame-content .tm-container .tm-container-content .tm-content-2 .performance-tab .result-chart{
+    height: 70%;
+}
+
+.activities-tab{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.activity
+{
+    height: 100%;
+    font-size: 10px;
+}
+.activity table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+.activity table tr th{
+    border: 1px solid gray;
+}
+.activity table tr td{
+    border: 1px solid gray;
+    font-size: 12px;
+    padding: 5px;
+}
+.taskmanager
+{
+    position: relative;
+    height: 93%;
+}
+
+.taskmanager .maximize-view{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.extra-activity
+{
+    display: none;
+}
+
+.maximize-view .frame-content .tm-container .tm-container-content .tm-content-3 .activities-tab .extra-activity{
+    display: block;
+}
