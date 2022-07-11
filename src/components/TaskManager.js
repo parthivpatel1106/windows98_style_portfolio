@@ -123,16 +123,26 @@ export const TaskManager = (props) => {
                   <PerformanceChart/>
                 </div>
                 <div className="result-details">
-                  <p>Available (CGPA)= 08.54</p>
-                  <p>Total (CGPA)= 10.00</p>
-                  <p>Type= B.Tech</p>
-                  <p>Sub-Type= Computer Science and Engg.</p>
-                  <p>Slot: 1 out of 2</p>
-                  <p>Batch= 2017 - 2021</p>
-                  <p>University= GTU</p>
-                  <p>Current Thread= Assistant System Engineer Trainee</p>
+                  {/* <p>Available (CGPA)= 08.54</p> */}
+                  <fieldset><legend>Available (CGPA)</legend>08.54 out of 10.00</fieldset>
+
+                  {/* <p>Total (CGPA)= 10.00</p> */}
+                  {/* <fieldset><legend>Total (CGPA)</legend>10.00</fieldset> */}
+                  <fieldset><legend>Percentage</legend>80.05%</fieldset>
+                  {/* <p>Type= B.Tech</p> */}
+                  <fieldset><legend>Type</legend>B.Tech</fieldset>
+                  {/* <p>Sub-Type= Computer Science and Engg.</p> */}
+                  <fieldset><legend>Sub-Type</legend>Computer Science and Engg.</fieldset>
+                  {/* <p>University= GTU</p> */}
+                  <fieldset><legend>University</legend>Gujarat Technological Uni.</fieldset>
+                  {/* <p>Batch= 2017 - 2021</p> */}
+                  <fieldset><legend>Batch</legend>2017-2021</fieldset>
+                  {/* <p>Slot: 1 out of 2</p> */}
+                  {/* <p>Current Thread= Assistant System Engineer Trainee</p> */}
+                  <fieldset><legend>Current Thread</legend>Assistant System Engineer Trainee</fieldset>
                   {/* <p>Version: Y</p> */}
-                  <p>Thread Location= Tata Consultancy Services</p>
+                  {/* <p>Thread Location= Tata Consultancy Services</p> */}
+                  <fieldset><legend>Thread Location</legend>Tata Consultancy Services</fieldset>
                 </div>
               </div>
             </div>

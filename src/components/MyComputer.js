@@ -3,6 +3,7 @@ import { AppFrame } from "./AppFrame";
 
 import floppydriveimg from "../images/mycomputer/floppydrive_icon.png";
 import foldericon from "../images/mycomputer/folder_icon.png";
+import imageDirIcon from "../images/mycomputer/imagediricon.png";
 import pdfIcon from "../images/apps/pdffileicon.png";
 import computerIcon from "../images/apps/computericon.png";
 import "../style/MyComputer.css";
@@ -90,13 +91,14 @@ export const MyComputer = (props) => {
             <PopoverView trigger={btnPopover} menuclass={"subset-view"}>
               <ErrorDialog popClose={setPop}/>
             </PopoverView>
-            <DesktopApps popBtn={setPop} appIcon={floppydriveimg} appName={"Local Disk (D:)"} />
+            {/* <DesktopApps popBtn={setPop} appIcon={floppydriveimg} appName={"Local Disk (D:)"} />
+            <DesktopApps popBtn={setPop} appIcon={floppydriveimg} appName={"Local Disk (E:)"} /> */}
             <DesktopApps popBtn={setView} appIcon={foldericon} appName={"My Documents"} />
+            <DesktopApps appIcon={imageDirIcon} appName={"Images"} popBtn={setView}  />
             <PopoverView trigger={filePopover.view} menuclass={"subset-view"}>
               <FilesView>
                 <DesktopApps popBtn={popPdfView} appIcon={pdfIcon} appName={"Parthiv .pdf"}/>
                 <DesktopApps popBtn={popPdfView1} appIcon={pdfIcon} appName={"Resume .pdf"}/>
-                <DesktopApps appIcon={foldericon} appName={"My Documents"} />
               </FilesView>
             </PopoverView>
         </FilesView>
