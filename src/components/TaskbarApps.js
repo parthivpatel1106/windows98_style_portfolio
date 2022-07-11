@@ -29,7 +29,7 @@ function TaskbarApps(props) {
       <button className="tba-btn" onClick={props.academics} >
         <img style={{height:"25px"}} src={TaskManagerIcon} ></img>
       </button>
-      <a href="#">
+      <a href="mailto:parthivpatel1106@gmail.com">
         <img src={mailLogo} className="mail-logo"></img>
       </a>
       <div style={{ borderLeft: "2px solid #888888", height: "45px" }}></div>

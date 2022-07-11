@@ -17,7 +17,8 @@ import { ErrorDialog } from "./ErrorDialog";
 import { FilesView } from "./FilesView";
 import {MyComputerHome} from "./MyComputerHome"
 import { PdfViewer } from "./PdfViewer";
-import parthivAboutMe from "../files/parthivAboutMe.pdf"
+import parthivAboutMe from "../files/parthivAboutMe1.pdf"
+import parthivResume from "../files/parthivResume.pdf"
 export const MyComputer = (props) => {
   const[btnPopover,setBtnPopover]=useState(false)
 
@@ -108,7 +109,7 @@ export const MyComputer = (props) => {
       <PdfViewer location={parthivAboutMe} popClose={popPdfView}/>
     </PopoverView>
     <PopoverView trigger={pdf1} menuclass={"subset-view"}>
-      <PdfViewer popClose={popPdfView1}/>
+      <PdfViewer location={parthivResume} popClose={popPdfView1}/>
     </PopoverView>
     </>
   );
